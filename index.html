@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo-1.ico" type="image/x-icon" />
+    <title>صيدلية الدكتورة/ لاميس صلاح</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mediaquery.css" />
+  </head>
+
+  <body>
+
+
+    <!--=================== loading screen ======================== -->
+    <div id="loadingScreen">
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </div>
+
+
+
+    <!--=================== header ======================== -->
+    <header>
+      
+      <nav class="navbar navbar-expand-lg">
+        <div class="container bg-transparent">
+          <a
+            class="navbar-brand d-flex justify-content-center align-items-center"
+            href="./index.html"
+          >
+            <img
+              src="./images/logo-1.jpg"
+              alt="pharmacy logo"
+              class="pharmacy-logo"
+            />
+            <div
+              class="d-flex flex-column align-items-center justify-content-center ms-3"
+            >
+              <p class="mb-0">Dr/ lamees</p>
+              <p class="mb-0">pharmacy</p>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav ms-auto mb-lg-0 d-flex justify-content-center align-items-center"
+            >
+              <li class="nav-item text-capitalize">
+                <a class="nav-link home-line" href="#home"
+                  ><div class="underline-home"></div>
+                  الرئيسية
+                </a>
+              </li>
+
+              <li class="nav-item text-capitalize">
+                <a class="nav-link home-line" href="#offers">
+                  <div class="underline-home"></div>
+                  العروض
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle home-line"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="underline-home"></div>
+                  منتجات
+                </a>
+                <ul class="dropdown-menu">
+
+                  <li>
+                    <a class="dropdown-item" href="#bodyProducts">
+                        العناية بالجسم </a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#skinProducts">
+                      العناية بالبشرة</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#hairProducts">
+                        العناية بالشعر </a
+                    >
+                  </li>
+            
+                </ul>
+              </li>
+
+              <li class="nav-item text-capitalize">
+                <a class="nav-link home-line" href="#contacts">
+                  <div class="underline-home"></div>
+                  تواصل معنا
+                </a>
+              </li>
+
+              <li class="nav-item ">
+
+                  <span id="lightMode" class="ms-2 text-black" role="button">  <i class="fa-regular fa-moon fa-xl" style="color: black;" title="dark mode"></i>dark   </span>
+                  <span id="darkMode" class="ms-2 text-white"  role="button">  <i class="fa-solid fa-moon fa-xl" style="color: #f7f7f7;" title="light mode"></i>light  </span>
+                  
+              </li>
+             
+            </ul>
+
+        
+          </div>
+        </div>
+      </nav>
+
+      
+      <div id="home" class="text-center">
+        <p class="mb-0 title-home text-muted">صيدلية الدكتورة</p>
+        <h1 class="mb-0">لاميس صلاح سليم</h1>
+        <span class="span-home text-muted"></span>
+      </div>
+    </header>
+
+    <main>
+      <!--=================== offers ======================== -->
+      <section id="offers">
+        <div class="container overflow-hidden">
+          <h2 class="wow fadeInUpBig "  data-wow-delay=".3s">أحدث العروض</h2>
+          <div class="underline-sections"></div>
+
+          <div  class="row g-5  justify-content-center text-end" id="offersId"> </div>
+
+        </div>
+      </section>
+
+           <!--=================== bodyProducts ======================== -->
+           <section id="bodyProducts">
+            <div class="container" >
+              <h2>منتجات الجسم</h2>
+              <div class="underline-sections"></div>
+            
+              <div class="row g-5 justify-content-center" id="bodyId" >
+              </div>
+              
+            </div>
+          </section>
+
+      <!--=================== productsBeauty ======================== -->
+
+     <section id="skinProducts">
+        <div class="container">
+       
+            <h2>منتجات البشرة</h2>
+            <div class="underline-sections"></div>
+              <div  class="owl-carousel text-center "> 
+
+                  <div  class="item">
+                    <figure>
+                      <img
+                        src="./images/skin1.jpg"
+                        class="w-100 "
+                        alt=" تيلوفيل سيرم"
+                      
+                      />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6> تيلوفيل سيرم</h6>
+                      <p>لعلاج الهالات السوداء    </p>
+                      <span class="fw-bold h5">السعر : 370 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin2.jpg"
+                        class="w-100 "
+                        alt="تيلوفيل سيرم "
+                        
+                     />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > تيلوفيل سيرم </h6>
+                      <p>يقلل التصبغات وتفتيح البقع الداكنة</p>
+                      <span class="fw-bold h5">السعر : 320 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin3.jpg"
+                        class="w-100 "
+                        alt=" ماء ميسيلار ومزيل للمكياج "
+                       
+                      />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > ماء ميسيلار  </h6>
+                      <p>مزيل للمكياج</p>
+                      <span class="fw-bold h5">السعر : 125 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin4.jpg"
+                        class="w-100 "
+                        alt="  تونر منقى للبشرة"
+                       
+                      />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > تونر   </h6>
+                      <p>منقى للبشرة</p>
+                      <span class="fw-bold h5">السعر : 125 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin5.jpg"
+                        class="w-100 "
+                        alt=" كريم ليلى مضاد للتجاعيد "
+                       
+                      />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > كريم ليلى    </h6>
+                      <p>مضاد للتجاعيد</p>
+                      <span class="fw-bold h5">السعر : 125 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin6.jpg"
+                        class="w-100 "
+                        alt="  غسول منظف مضاد للتجاعيد"
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >غسول منظف      </h6>
+                      <p>مضاد للتجاعيد</p>
+                      <span class="fw-bold h5">السعر : 125 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin7.jpg"
+                        class="w-100 "
+                        alt="  غسول منظف للبشرة المختلطة والدهنية"
+                        
+                     />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >  غسول منظف    </h6>
+                      <p>للبشرة المختلطة والدهنية</p>
+                      <span class="fw-bold h5">السعر : 125 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin8.jpg"
+                        class="w-100 "
+                        alt=" كليو غسول فيتامين سى"
+                       
+                      />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >  كليو غسول   </h6>
+                      <p>فيتامين سى</p>
+                      <span class="fw-bold h5">السعر : 125 جنيه</span>
+                      
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin9.jpg"
+                        class="w-100 "
+                        alt="جل ملطف بعد التعرض للشمس"
+                        
+                      />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >  جل ملطف    </h6>
+                      <p>ملطف بعد التعرض للشمس</p>
+                      <span class="fw-bold h5">السعر : 125 جنيه</span>
+                      
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin10.jpg"
+                        class="w-100 "
+                        alt=" سائل واقى من الشمس ومقلل اللمعان "
+                        
+                      />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >سائل واقى من الشمس  </h6>
+                      <p>واقى ومقلل اللمعان</p>
+                      <span class="fw-bold h5">السعر : 125 جنيه</span>
+                     
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin11.jpg"
+                        class="w-100 "
+                        alt=" جل كريم حماية من الشمس "
+                      
+                      />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >جل كريم   </h6>
+                      <p>للحماية من أشعة الشمس</p>
+                      <span class="fw-bold h5">السعر : 125 جنيه</span>
+                      
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin12.jpg"
+                        class="w-100 "
+                        alt="   سيرم فيم تريبل أكشن للتفتيح "
+                      
+                      />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >  سيرم فيم   </h6>
+                      <p>تريبل أكشن للتفتيح</p>
+                      <span class="fw-bold h5">السعر : 125 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin13.jpg"
+                        class="w-100 "
+                        alt=" كريم مرطب نهارى بعامل حماية من الشمس "
+                       
+                      />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > كريم مرطب    </h6>
+                      <p>ترطيب نهارى بعامل حماية من الشمس</p>
+                      <span class="fw-bold h5">السعر : 125 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin14.jpg"
+                        class="w-100 "
+                        alt=" ستارفيل غسول تفتيح لكل أنواع البشرة "
+                      
+                      />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >ستارفيل غسول   </h6>
+                      <p>تفتيح لكل أنواع البشرة</p>
+                      <span class="fw-bold h5">السعر : 130 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin15.jpg"
+                        class="w-100 "
+                        alt=" ستارفيل غسول جل للبشرة الدهنية "
+                        
+                     />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > ستارفيل غسول جل   </h6>
+                      <p>للبشرة الدهنية</p>
+                      <span class="fw-bold h5">السعر : 125 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin16.jpg"
+                        class="w-100 "
+                        alt=" ستارفيل كريم البشرة المعرضة لحب الشباب"
+                        
+                     />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > ستارفيل كريم     </h6>
+                      <p>للبشرة المعرضة لحب الشباب</p>
+                      <span class="fw-bold h5">السعر : 85 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin17.jpg"
+                        class="w-100 "
+                        alt="ستارفيل كريم تفتيح البشرة"
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > ستارفيل كريم   </h6>
+                      <p>تفتيح لون البشرة</p>
+                      <span class="fw-bold h5">السعر : 105 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin18.jpg"
+                        class="w-100 "
+                        alt="cleo grow مجموعة"
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > ستارفيل جل ليلى     </h6>
+                      <p>تفتيح البقع وتوحيد لون البشرة</p>
+                      <span class="fw-bold h5">السعر : 110 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin19.jpg"
+                        class="w-100 "
+                        alt="بوبانا كريم   "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >بوبانا كريم  </h6>
+                      <p>لتفتيح البشرة والجسم</p>
+                      <span class="fw-bold h5">السعر : 35 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin20.jpg"
+                        class="w-100 "
+                        alt="شان غسول  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >  شان غسول      </h6>
+                      <p>غسول الوجه ومضاد للأكسدة</p>
+                      <span class="fw-bold h5">السعر : 150 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin21.jpg"
+                        class="w-100 "
+                        alt="ترطيب الوجه للبشرة الدهنيةوالمختلطة  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > شان مرطب </h6>
+                      <p>ترطيب الوجه للبشرة الدهنية والمختلطة</p>
+                      <span class="fw-bold h5">السعر : 170 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin22.jpg"
+                        class="w-100 "
+                        alt="شان كريم  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > شان كريم </h6>
+                      <p>ترطيب وتجديد البشرة</p>
+                      <span class="fw-bold h5">السعر : 150 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin23.jpg"
+                        class="w-100 "
+                        alt="  انفينيتى هيدروجل"
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > صن بلوك  </h6>
+                      <p>انفينيتى هيدروجل عامل حماية</p>
+                      <span class="fw-bold h5">السعر : 135 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin24.jpg"
+                        class="w-100 "
+                        alt="إنفينيتى كريم  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > إنفينيتى كريم       </h6>
+                      <p>كريم مرطب وملطف </p>
+                      <span class="fw-bold h5">السعر : 150 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin25.jpg"
+                        class="w-100 "
+                        alt="صن بلوك  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > صن بلوك   </h6>
+                      <p>انفينيتى كير عامل حماية + 50</p>
+                      <span class="fw-bold h5">السعر : 130 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin26.jpg"
+                        class="w-100 "
+                        alt="إنفينيتى كريم  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > إنفينيتى كريم      </h6>
+                      <p> يلطف البشرة ويقلل فقدان الماء</p>
+                      <span class="fw-bold h5">السعر : 140 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin27.jpg"
+                        class="w-100 "
+                        alt="انفينيتى كريم فيلر"
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > انفينيتى كريم فيلر </h6>
+                      <p>لتفتيح وتوحيد لون البشرة</p>
+                      <span class="fw-bold h5">السعر : 80 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin28.jpg"
+                        class="w-100 "
+                        alt=" انفينيتى كريم"
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >  انفينيتى كريم   </h6>
+                      <p>تفتيح مكثف للبشرة والجسم</p>
+                      <span class="fw-bold h5">السعر : 160 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin29.jpg"
+                        class="w-100 "
+                        alt="أرجينتو كريم  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > أرجينتو كريم </h6>
+                      <p>كونتور العين بالكولاجين</p>
+                      <span class="fw-bold h5">السعر : 189 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin30.jpg"
+                        class="w-100 "
+                        alt="سيكا لاب كريم  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >  سيكا لاب كريم  </h6>
+                      <p>لتجديد البشرة</p>
+                      <span class="fw-bold h5">السعر : 215 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin31.jpg"
+                        class="w-100 "
+                        alt="ايفا بى وايت كريم  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6> ايفا بى وايت كريم  </h6>
+                      <p>لتفتيح منطقة تحت العين</p>
+                      <span class="fw-bold h5">السعر : 40 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin32.jpg"
+                        class="w-100 "
+                        alt="   سبلييت كريم  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >  سبلييت كريم     </h6>
+                      <p>لتفتيح وترطيب محيط العين</p>
+                      <span class="fw-bold h5">السعر : 180 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin33.jpg"
+                        class="w-100 "
+                        alt="فيموبيز كريم  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >  فيموبيز كريم  </h6>
+                      <p> ترطيب وتجديد البشرة ومحاربة التجاعيد</p>
+                      <span class="fw-bold h5">السعر : 110 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin34.jpg"
+                        class="w-100 "
+                        alt="كليو كريم + كونسيلر  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > كليو كريم + كونسيلر  </h6>
+                      <p>لتفتيح محيط العين الدرجة الفاتحة</p>
+                      <span class="fw-bold h5">السعر : 150 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin35.jpg"
+                        class="w-100 "
+                        alt="فالدو كريم  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >  فالدو كريم  </h6>
+                      <p>كريم مرطب</p>
+                      <span class="fw-bold h5">السعر : 80 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin36.jpg"
+                        class="w-100 "
+                        alt="بوباى جل  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > بوباى جل  </h6>
+                      <p>واقى من الشمس</p>
+                      <span class="fw-bold h5">السعر : 295 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin37.jpg"
+                        class="w-100 "
+                        alt="انفينيتى ريتينول  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >  انفينيتى ريتينول </h6>
+                      <p> كريم للبشرة  </p>
+                      <span class="fw-bold h5">السعر : 300 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin38.jpg"
+                        class="w-100 "
+                        alt="ازها سى سيرم  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > ازها سى سيرم   </h6>
+                      <p> فيتامين سى %10 </p>
+                      <span class="fw-bold h5">السعر : 195 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin39.jpg"
+                        class="w-100 "
+                        alt="سوبر سيرم  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > سوبر سيرم  </h6>
+                      <p>حمض الهيالورونيك والنياسيناميد</p>
+                      <span class="fw-bold h5">السعر : 125 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin40.jpg"
+                        class="w-100 "
+                        alt="كليو كونتور  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 > كليو كونتور  </h6>
+                      <p>لتفتيح محيط العين</p>
+                      <span class="fw-bold h5">السعر : 125 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin41.jpg"
+                        class="w-100 "
+                        alt="دراكون كونسيلر  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >   دراكون كونسيلر  </h6>
+                      <p>لتفتيح محيط العين</p>
+                      <span class="fw-bold h5">السعر : 200 جنيه</span>
+                    </figcaption>
+                  </div>
+      
+                  <div class="item">
+                    <figure>
+                      <img
+                        src="./images/skin42.jpg"
+                        class="w-100 "
+                        alt="كونسيلر مايت سينما  "
+                        
+                    />
+                    </figure>
+                    <figcaption class="offers-text ">
+                      <h6 >  كونسيلر مايت سينما  </h6>
+                      <p>لعلاج الشيخوخة والهالات السوداء</p>
+                      <span class="fw-bold h5">السعر : 70 جنيه</span>
+                    </figcaption>
+                  </div>
+                </div>
+              </div>
+            </section>   
+
+      <!--=================== productsHair ======================== -->
+      <section id="hairProducts">
+        <div class="container" >
+          <h2>منتجات الشعر</h2>
+          <div class="underline-sections"></div>
+        
+          <div class="row g-5 justify-content-center" id="hairId" ></div>
+          
+        </div>
+      </section>
+
+  
+
+
+      <!--=================== contacts ======================== -->
+      <section id="contacts" class="overflow-hidden">
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-lg-6 mt-3 wow fadeInLeftBig">
+              <div class="social-media text-center">
+                <h4 class="text-white">السوشيال ميديا</h4>
+                <ul
+                  class="d-flex justify-content-center align-items-center mt-4"
+                >
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/profile.php?id=100063961090400&mibextid=qi2Omg&rdid=W8ebUlPGrZYzgNnX&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1i1WsxUAZG4hGqN1%2F%3Fmibextid%3Dqi2Omg"
+                    >
+                      <i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://chat.whatsapp.com/LlzfvpxGsYmAx5NAkCeDLx"
+                    >
+                      <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://t.me/dr_lames_pharmacy">
+                      <i class="fa-brands fa-telegram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-6 text-end wow fadeInRightBig">
+              <ul class="telephone-address text-white ">
+              
+                <li> <h5>العنوان : سرس الليان - أول سكة الجزاير  <i class="fa-solid fa-location-dot"></i>
+                     </h5>
+               </li>
+    
+                <li class="mt-4 mb-4">
+                  <h5>01099170108 :  الصيدلية و الواتساب <i class="fa-solid fa-phone-flip"></i>
+                  </h5>
+                </li>
+
+                <li>
+                  <h5>048/3356410 : الخط الأرضى <i class="fa-solid fa-phone-flip"></i>
+                  </h5>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================== button  ======================== -->
+      <button id="buttonUp" class="btn rounded-circle">
+        <i class="fa fa-angle-up"></i>
+      </button>
+
+
+
+    </main>
+
+    <script src="./js/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".span-home", {
+        strings: [
+          "خدمة طبية متميزة",
+          " مستحضرات تجميل  ",
+          " أنظمة غذائية متكاملة ",
+        ],
+        typeSpeed: 70,
+        backspeed: 50,
+        loop: true,
+      });
+    </script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

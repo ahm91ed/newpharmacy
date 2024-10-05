@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+  --main-color: #5cc1b3;
+  --second-color: #ffffff;
+  --third-color: #F7ECDE;
+  --fourth-color: rgba(128, 128, 128, 0.3);
+  --important-color : #FF305B ;
+  --font-family: "Source Sans 3", sans-serif;
+  --main-margin: 3rem;
+  --main-padding: 3rem;
+}
+ 
+
+::-webkit-scrollbar{
+
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+
+  background-color: var(--third-color);
+}
+
+::-webkit-scrollbar-thumb {
+
+  background-color: var(--fourth-color);
+}
+
+
+li{
+  list-style: none;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+.cuursor-pointer {
+  cursor: pointer;
+}
+
+body, html {
+  overflow: hidden;
+}
+
+h2 {
+  color:black;
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 0px !important;
+  
+
+}
+
+.underline-sections{
+  background-color:var(--important-color);
+  width: 15%;
+  height: 5px;
+  margin: auto;
+  position: relative;
+  margin-bottom: 50px;
+  
+}
+
+
+
+
+
+
+
+/* ========== navbar style ========== */
+
+nav {
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.pharmacy-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.home-line {
+  color: white;
+  position: relative;
+}
+
+
+
+.home-line:hover {
+  color: #fff;
+}
+
+
+
+.underline-home {
+  position: absolute;
+  background-color: white;
+  width: 0;
+  height: 3px;
+  top: 90%;
+  right: 0;
+  transition: all 1s;
+} 
+
+.home-line:hover .underline-home {
+  width: 100%;
+}
+
+
+
+
+.navbar-brand:hover  {
+  color: #fff;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show
+{
+  color: white !important;
+}
+
+
+
+
+
+
+/* ========== header style ========== */
+
+header {
+  padding: var(--section-padding);
+  background-image: url(../images/background-8.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  font-family: var(--font-family);
+}
+
+
+/* ========== home style ========== */
+
+#home{
+  margin-top: 5rem;
+
+}
+
+
+h1 {
+  
+  font-size: 70px;
+  font-weight: 800;
+  color: var(--second-color);
+}
+
+.title-home {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.span-home {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+
+
+
+
+/* ========== offers style ========== */
+
+#offers {
+  padding: var(--main-padding);
+  background-color: #EEEEEE;
+  
+
+}
+
+.card
+{
+background-color: #EEEEEE;  
+border: 3px solid var(--fourth-color);}
+
+
+figure
+{
+margin-bottom: 0px;
+overflow: hidden;
+}
+
+
+.card img
+{
+transition: all 1s;
+}
+
+.card:hover figure img
+{
+transform: scale(1.1);
+} 
+
+.offers-text {
+
+  padding: 20px;
+}
+
+.offers-text h6{
+  font-size: 20px;
+}
+
+.offers-text p{
+font-size: 18px;
+margin-bottom: 5px;
+}
+
+.offers-text span
+{
+color: var(--important-color);
+}
+
+/* ========== bodyProducts style ========== */
+
+#bodyProducts
+{
+  padding: var(--main-padding);
+
+}
+
+
+/* ========== skinProducts style ========== */
+
+#skinProducts{
+  padding: var(--main-padding);
+  /* background-color: #EDDFD2; */
+  background-color: #F1EAE4;
+}
+
+#skinProducts .item{
+  text-align: right;
+  margin-right: 30px;
+  border: 3px solid var(--fourth-color);
+  border-radius: 5px;
+ 
+  
+}
+
+
+#skinProducts .item h6 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#skinProducts .item p {
+  margin-top: 10px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  
+}
+
+
+
+/* ========== productsHair style ========== */
+
+#hairProducts{
+padding: var(--main-padding);
+}
+
+
+
+.haircard{
+text-align: center;
+}
+
+
+.haircard h6{
+  font-size: 20px;
+}
+
+.haircard span
+{
+color: var(--important-color);
+}
+
+
+
+
+/* ========================================== 
+  ============== contacts style ========== */
+
+#contacts {
+  background-color: black;
+  padding: var(--main-padding);
+}
+
+.social-media h4 {
+  position: relative;
+}
+
+.social-media h4::after {
+  content: '';
+  position: absolute;
+  background-color:var(--important-color);
+  width: 100%;
+  height: 2px;
+  top: 120%;
+  right: 0;
+  margin-top: 8px;
+}
+
+
+.social-media {
+
+  order: 1;
+}
+
+.social-media  li{
+ 
+  margin-left: 8px;
+ 
+}
+
+.social-media  li i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--second-color);
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+
+.social-media  li i:hover {
+  background-color: var(--important-color);
+}
+
+
+
+.telephone-address i {
+  color: var(--important-color);
+}
+
+.telephone-address ul li i
+{
+  font-size: 30px;
+}
+
+
+/* ===============================================
+  =========== button scroll up style ========== */
+
+#buttonUp {
+  background-color:rgba(0, 0, 0, 0.589);
+  position: fixed;
+  right: 3px;
+  bottom: 10px;
+  display: none;
+  z-index: 50;
+  color: var(--second-color);
+  
+}
+
+/* ===============================================
+  =========== loading screen style ========== */
+
+#loadingScreen {
+  background-color: var(--main-color);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #fff;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
+
+@keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}
+
+/* =====================================
+  =========== sidebar style ========== */
+
+#sideBar{
+
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+ 
+ 
+#sideBarInner{
+
+  align-self: center;
+  background-color: rgba(128, 128, 128, 0.384);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.sideBarIcon{
+
+  align-self: center;
+  background-color: var(--important-color);
+  padding: 8px;
+  color: white;
+  font-size: 25px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#sideBarInner h6
+{
+
+  font-size: 20px;
+}

@@ -1,0 +1,159 @@
+
+ /* media screen at 1400px */
+
+@media (max-width: 1399.98px) { 
+
+    .offers-text{
+        padding: 5px;
+    }
+ 
+}
+
+ /* media screen at 1200px */
+
+@media (max-width: 1199.98px) { 
+
+    h2 {
+    
+        font-size: 40px;
+        margin-bottom: 0px !important;
+     
+      }
+
+      .offers-text h6{
+        font-size: 15px;
+      }
+
+      .offers-text p{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      .offers-text span{
+        font-size: 15px;
+        
+      }
+
+      .haircard h6{
+        font-size: 15px;
+      }
+
+   
+
+ }
+
+
+ /* media screen at 992px */
+
+ @media (max-width: 991.98px) { 
+
+  h1 {
+  
+    font-size: 50px;
+   
+  }
+
+  
+.title-home {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.span-home {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+  .offers-text{
+    padding: 10px;
+  }
+
+  .offers-text h6{
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+
+  .offers-text p{
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .offers-text span{
+    font-size: 20px;
+    
+  }
+
+  .haircard h6{
+    font-size: 20px;
+  }
+
+
+  .underline-sections{
+    background-color:var(--important-color);
+    width: 15%;
+    height: 5px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 50px;
+    
+  }
+
+
+
+
+
+
+
+
+
+ }
+
+
+ /* media screen at 768px */
+
+ @media (max-width: 767.98px) { 
+
+  .offers-text p{
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+
+  .underline-sections{
+    background-color:var(--important-color);
+    width: 18%;
+    height: 5px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 50px;
+    
+  }
+
+
+  }
+
+
+   /* media screen at 576px */
+
+  @media (max-width: 575.98px) { 
+
+    h2{
+
+      font-size: 30px;
+    }
+
+    .underline-sections{
+      background-color:var(--important-color);
+      width: 20%;
+      height: 5px;
+      margin: auto;
+      position: relative;
+      margin-bottom: 50px;
+      
+    }
+
+    .haircard h6{
+      font-size: 18px;
+    }
+
+   }
